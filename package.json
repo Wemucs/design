@@ -1,0 +1,13 @@
+{
+  "name": "foundation-libsass-template",
+  "version": "0.0.1",
+  "devDependencies": {
+    "node-sass": "~0.9.3",
+    "grunt": "~0.4.1",
+    "grunt-contrib-watch": "~0.5.3",
+    "load-grunt-tasks": "~1.0.0",
+    "time-grunt": "~1.0.0",
+    "grunt-bower-installer": "~0.3.6",
+    "grunt-sass": "~0.8.1"
+  }
+}
