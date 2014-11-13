@@ -10,7 +10,12 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
 
     bower: {
-      install: { }
+      install: {
+        options: {
+          install: true,
+          copy: false
+        }
+      }
     },
 
     sass: {
@@ -40,4 +45,4 @@ module.exports = function(grunt) {
   grunt.registerTask('build', ['sass']);
   grunt.registerTask('default', ['bower', 'build']);
   grunt.registerTask('serve', ['default', 'watch']);
-}
+};
