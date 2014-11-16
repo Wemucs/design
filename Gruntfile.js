@@ -9,6 +9,7 @@ module.exports = function(grunt) {
   grunt.initConfig({
     wemucs: {
       dirs: {
+        build: './build',
         examples: './examples'
       }
     },
@@ -24,6 +25,15 @@ module.exports = function(grunt) {
       }
     },
 
+    copy: {
+      styles: {
+        expand: true,
+        cwd: '<%= wemucs.dirs.build %>/css',
+        src: '**',
+        dest: '<%= wemucs.dirs.examples %>/css'
+      }
+    },
+
     sass: {
       options: {
         includePaths: ['bower_components/foundation/scss']
@@ -33,7 +43,7 @@ module.exports = function(grunt) {
           outputStyle: 'compressed'
         },
         files: {
-          'css/app.css': 'scss/app.scss'
+          '<%= wemucs.dirs.build %>/css/app.css': 'scss/app.scss'
         }        
       }
     },
@@ -43,15 +53,18 @@ module.exports = function(grunt) {
 
       sass: {
         files: 'scss/**/*.scss',
-        tasks: ['sass']
-      },
-      livereload: {
+        tasks: ['sass', 'copy:styles'],
         options: {
           livereload: '<%= connect.options.livereload %>'
-        },
+        }
+      },
+      livereload: {
         files: [
-          '<%= wemucs.dirs.examples %>/index.html'
-        ]
+          '<%= wemucs.dirs.examples %>/*.html'
+        ],
+        options: {
+          livereload: '<%= connect.options.livereload %>'
+        }
       }
     },
 
@@ -70,10 +83,10 @@ module.exports = function(grunt) {
           ]
         }
       }
-    },
+    }
   });
 
   grunt.registerTask('build', ['sass']);
-  grunt.registerTask('default', ['bower', 'build']);
+  grunt.registerTask('default', ['bower', 'build', 'copy']);
   grunt.registerTask('serve', ['default', 'connect:livereload', 'watch']);
 };
