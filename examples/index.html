@@ -7,17 +7,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="css/app.css" />
+
 </head>
 <body>
-    <section>
-        <article>
-            <h1>The first article or you will love this blog</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis dui id metus euismod varius ornare eget libero. Etiam quis bibendum mauris, in bibendum libero. Quisque ultricies pellentesque ipsum id fringilla. Sed at est sed orci condimentum gravida. Ut ligula sapien, consequat nec enim sit amet, tempor elementum metus. Donec mollis sit amet magna a faucibus. Integer in vestibulum sapien. Fusce eu cursus neque. Cras nec placerat nunc. Nunc finibus dapibus diam vitae efficitur. Sed eu tempor dolor.</p>
+    <div class="contain-to-grid sticky">
+        <nav class="top-bar" data-topbar role="navigation" data-options="sticky_on: large">
+            <ul class="title-area">
+                <li class="name">
+                    <h1><a href="#">Logo Wemucs</a></h1>
+                </li>
+                <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+                <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+            </ul>
+            <section class="top-bar-section">
+                <ul class="left">
+                    <li class="active"><a href="#">High-tech</a></li>
+                    <li><a href="#">Lifestyle</a></li>
+                    <li><a href="#">Others</a></li>
+                </ul>
+            </section>
+        </nav>
+    </div>
+    <section class="articles-list">
+        <article class="clearfix">
+            <div>
+                <img class="article-img right" src="http://lorempixel.com/75/75/" />
+                <h1>Massive imports in MySQL</h1>
+                <p>20 millions rows in few seconds</p>
+            </div>
         </article>
         <article>
-            <h1>The first article or you will love this blog</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis dui id metus euismod varius ornare eget libero. Etiam quis bibendum mauris, in bibendum libero. Quisque ultricies pellentesque ipsum id fringilla. Sed at est sed orci condimentum gravida. Ut ligula sapien, consequat nec enim sit amet, tempor elementum metus. Donec mollis sit amet magna a faucibus. Integer in vestibulum sapien. Fusce eu cursus neque. Cras nec placerat nunc. Nunc finibus dapibus diam vitae efficitur. Sed eu tempor dolor.</p>
+            <div>
+                <img class="article-img right" src="http://lorempixel.com/75/75/" />
+                <h1>Creating a blog in 1000 lessons</h1>
+                <p>Spécial dédicace! Parce que tout n'est pas si rapide...</p>
+            </div>
         </article>
     </section>
+
+    <script src="js/wemucs.js"></script>
 </body>
 </html>

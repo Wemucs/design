@@ -4,7 +4,8 @@
 
 // Global settings
 // Based on: https://color.adobe.com/fr/Wemucs-colors-based-on-Maravon-rot-grau-schwarz-color-theme-4829392/
-$wemucs-background-color: #FFFFFF;
+$wemucs-background-color: #fafafa;
+$wemucs-content-background-color: #ffffff;
 $wemucs-title-color: #AD1730;
 $wemucs-text-color: #000000;
 $wemucs-subtitle-color: #969696;
@@ -21,3 +22,19 @@ $small-font-color: $wemucs-subtitle-color;
 $base-font-size: 14px;
 $header-line-height: 1.1;
 $base-line-height: 110%;
+
+// Background color for the top bar
+$topbar-bg-color: #ffffff;
+$topbar-bg: $topbar-bg-color;
+
+// Height and margin
+$topbar-height: 45px;
+$topbar-margin-bottom: 0;
+
+$topbar-link-color: $wemucs-subtitle-color;
+$topbar-menu-link-color: $topbar-link-color;
+$topbar-menu-icon-color: $topbar-link-color;
+
+$topbar-dropdown-bg: $topbar-bg-color;
+$topbar-dropdown-link-color: $topbar-link-color;
+$topbar-dropdown-link-bg: $topbar-bg-color;

@@ -10,7 +10,9 @@ module.exports = function(grunt) {
     wemucs: {
       dirs: {
         build: './build',
-        examples: './examples'
+        examples: './examples',
+        scripts: './js',
+        vendors: './bower_components'
       }
     },
 
@@ -31,6 +33,12 @@ module.exports = function(grunt) {
         cwd: '<%= wemucs.dirs.build %>/css',
         src: '**',
         dest: '<%= wemucs.dirs.examples %>/css'
+      },
+      scripts: {
+        expand: true,
+        cwd: '<%= wemucs.dirs.build %>/js',
+        src: '**',
+        dest: '<%= wemucs.dirs.examples %>/js'
       }
     },
 
@@ -45,6 +53,23 @@ module.exports = function(grunt) {
         files: {
           '<%= wemucs.dirs.build %>/css/app.css': 'scss/app.scss'
         }        
+      }
+    },
+
+    uglify: {
+      development: {
+        options: {
+          beautify: true,
+          mangle: true
+        },
+        files: {
+          '<%= wemucs.dirs.build %>/js/wemucs.js' : [
+            '<%= wemucs.dirs.vendors %>/jquery/dist/jquery.js',
+            '<%= wemucs.dirs.vendors %>/foundation/js/foundation.js',
+            '<%= wemucs.dirs.vendors %>/foundation/js/foundation/foundation.topbar.js',
+            '<%= wemucs.dirs.scripts %>/app.js',
+          ]
+        }
       }
     },
 
@@ -86,7 +111,7 @@ module.exports = function(grunt) {
     }
   });
 
-  grunt.registerTask('build', ['sass']);
+  grunt.registerTask('build', ['sass', 'uglify']);
   grunt.registerTask('default', ['bower', 'build', 'copy']);
   grunt.registerTask('serve', ['default', 'connect:livereload', 'watch']);
 };
