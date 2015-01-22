@@ -10,4 +10,27 @@
     font-weight: 300;
     font-size: 1.3em;
   }
+
+  p + ul {
+    margin-top: -0.5rem;
+  }
+
+  .article-credentials {
+    color: $wemucs-text-color;
+
+    margin-top: 3em;
+
+    font-size: 1em;
+    text-align: center;
+  }
+
+  .article-topic {
+    color: $wemucs-subtitle-color;
+
+    margin-top: 0.5em;
+
+    font-size: 1em;
+    font-weight: 300;
+    text-align: center;
+  }
 }

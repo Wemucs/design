@@ -1,4 +1,4 @@
-.articles-list {
+.articles-list, .related-articles {
   article {
     background-color: $wemucs-content-background-color;
     margin-top: 1em;
@@ -31,3 +31,5 @@
     }
   }
 }
+
+
