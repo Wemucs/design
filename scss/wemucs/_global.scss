@@ -1,3 +1,7 @@
+.topic-title {
+  margin: 0.5em;
+}
+
 .articles-list {
   article {
     background-color: $wemucs-content-background-color;
@@ -13,17 +17,21 @@
     }
 
     p {
-      margin-bottom: 0;
+      font-weight: 300;
+      margin-bottom: 0.5rem;
       line-height: 1.2;
     }
 
-    .article-img {
+    img {
       width: 75px;
       height: 75px;
+      margin: 2px;
     }
 
-    .article-img-part:after {
-      @include clearfix();
+    .article-credentials {
+      color: $wemucs-subtitle-color;
+      font-size: 0.75em;
+      font-weight: 300;
     }
   }
 }
