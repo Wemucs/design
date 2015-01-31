@@ -38,3 +38,18 @@
     text-align: center;
   }
 }
+
+@media #{$medium-up} {
+  .article-view {
+    p {
+      font-size: 1.1em;
+    }
+  }
+}
+
+@media #{$large-up} {
+  .article-view {
+    padding: 1em 2em;
+  }
+}
+
