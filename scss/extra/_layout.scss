@@ -25,3 +25,16 @@ body {
 .copyrights {
     background-color: $footer-copyrights-bg-color;
 }
+
+// - Sticky footer
+// ------------------------------
+.wrapper {
+    min-height: 100%;
+    margin: 0 auto;
+    margin-bottom: -$footer-height;
+}
+
+.footer,
+.push {
+    height: $footer-height;
+}
