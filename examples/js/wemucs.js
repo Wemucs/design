@@ -5387,4 +5387,6 @@
         },
         reflow: function() {}
     };
-}(jQuery, window, window.document), $(document).foundation();
+}(jQuery, window, window.document), function() {
+    $(document).foundation();
+}();
