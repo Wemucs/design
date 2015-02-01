@@ -1,0 +1,15 @@
+// ------------------------------
+// - Logo module
+// ------------------------------
+
+.logo-container {
+  color: $color-white;
+  float: left;
+  margin: 10px 0 20px;
+  text-transform: uppercase;
+  vertical-align: middle;
+
+  .logo {
+    margin-right: 10px;
+  }
+}

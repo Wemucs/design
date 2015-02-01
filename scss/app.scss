@@ -1,11 +1,7 @@
-//
-// Wemucs design
-//
+// ------------------------------
+// Wemucs Main Stylesheet
+// ------------------------------
 
-@import "settings";
-@import "foundation";
-
-@import "wemucs/global";
-
-@import "wemucs/article";
-@import "wemucs/lists";
+// Smacss files, bootstrap files
+// ------------------------------
+@import 'extra';

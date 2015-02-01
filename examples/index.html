@@ -10,60 +10,168 @@
     <link rel="stylesheet" href="css/app.css" />
 </head>
 <body>
-    <div class="contain-to-grid sticky">
-        <nav class="top-bar" data-topbar role="navigation" data-options="sticky_on: large">
-            <ul class="title-area">
-                <li class="name">
-                    <h1><a href="#">Logo Wemucs</a></h1>
-                </li>
-                <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-                <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-            </ul>
-            <section class="top-bar-section">
-                <ul class="left">
-                    <li class="active"><a href="#">High-tech</a></li>
-                    <li><a href="#">Lifestyle</a></li>
-                    <li><a href="#">Others</a></li>
-                </ul>
-            </section>
-        </nav>
+    <header class="header" data-topbar role="navigation" data-options="sticky_on: large">
+        <div class="row">
+            <div class="large-12 columns">
+                <div class="logo-container">
+                    <img class="logo" src="http://lorempixel.com/100/40/" />
+
+                    Wemucs
+                </div>
+
+                <div class="right">
+                    <ul class="inline-list list-links">
+                        <li>
+                            <a href="#">
+                                Blog
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Docs
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                App
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="sub-header">
+        <div class="row">
+            <div class="large-12 columns">
+                <h1 class="title title-main">
+                    Page title
+                </h1>
+            </div>
+        </div>
     </div>
-    <h1 class="section-title">Topic title</h1>
-    <section class="articles-list">
-        <article class="clearfix">
-            <div>
-                <img class="article-img right" src="http://lorempixel.com/75/75/" />
-                <h1><a href="article.html">Massive imports in MySQL</a></h1>
-                <p><a>20 millions rows in few seconds</a></p>
+
+    <section class="content">
+        <div class="row">
+            <div class="small-12 medium-4 large-4 columns">
+                <article class="article-entry">
+                    <div>
+                        <img class="article-img" src="http://lorempixel.com/1000/500/" />
+
+                        <h2 class="article-title">
+                            Massive imports in MySQL
+                        </h2>
+                        <p class="article-content">
+                            20 millions rows in few seconds
+                        </p>
+                    </div>
+                    <div class="article-credentials">
+                        Charles-Emmanuel, 22 janvier 2014
+                    </div>
+                </article>
             </div>
-            <div class="article-credentials">
-                Charles-Emmanuel, 22 janvier 2014
+
+            <div class="small-12 medium-4 large-4 columns">
+                <article class="article-entry">
+                    <div>
+                        <img class="article-img" src="http://lorempixel.com/1000/500/" />
+                        <h2 class="article-title">
+                            Creating a blog in 1000 lessons
+                        </h2>
+                        <p class="article-content">
+                            Spécial dédicace! Parce que tout n'est pas si rapide...
+                        </p>
+                    </div>
+                    <div class="article-credentials">
+                        Gauthier, 01 janvier 1970
+                    </div>
+                </article>
             </div>
-        </article>
-        <article>
-            <div>
-                <img class="right" src="http://lorempixel.com/75/75/" />
-                <h1>Creating a blog in 1000 lessons</h1>
-                <p>Spécial dédicace! Parce que tout n'est pas si rapide...</p>
+
+            <div class="small-12 medium-4 large-4 columns">
+                <article class="article-entry">
+                    <div>
+                        <img class="article-img" src="http://lorempixel.com/1000/500/" />
+
+                        <h2 class="article-title">
+                            Design is life
+                        </h2>
+                        <p class="article-content">
+                            La fan des pictos et pourtant aucune photo en illustration...
+                        </p>
+                    </div>
+                    <div class="article-credentials">
+                        Adeline, 31 février 2017
+                    </div>
+                </article>
             </div>
-            <div class="article-credentials">
-                Gauthier, 01 janvier 1970
+            <div class="small-12 medium-4 large-4 columns">
+                <article class="article-entry">
+                    <div>
+                        <img class="article-img" src="http://lorempixel.com/1000/500/" />
+                        <h2 class="article-title">
+                            Massive imports in MySQL
+                        </h2>
+                        <p class="article-content">
+                            20 millions rows in few seconds
+                        </p>
+                    </div>
+                    <div class="article-credentials">
+                        Charles-Emmanuel, 22 janvier 2014
+                    </div>
+                </article>
             </div>
-        </article>
-        <article>
-            <div>
-                <h1>Design is life</h1>
-                <p>La fan des pictos et pourtant aucune photo en illustration...</p>
+
+            <div class="small-12 medium-4 large-4 columns">
+                <article class="article-entry">
+                    <div>
+                        <img class="article-img" src="http://lorempixel.com/1000/500/" />
+                        <h2 class="article-title">
+                            Creating a blog in 1000 lessons
+                        </h2>
+                        <p class="article-content">
+                            Spécial dédicace! Parce que tout n'est pas si rapide...
+                        </p>
+                    </div>
+                    <div class="article-credentials">
+                        Gauthier, 01 janvier 1970
+                    </div>
+                </article>
             </div>
-            <div class="article-credentials">
-                Adeline, 31 février 2017
+
+            <div class="small-12 medium-4 large-4 columns">
+                <article class="article-entry">
+                    <div>
+                        <img class="article-img" src="http://lorempixel.com/1000/500/" />
+
+                        <h2 class="article-title">
+                            Design is life
+                        </h2>
+
+                        <p class="article-content">
+                            La fan des pictos et pourtant aucune photo en illustration...
+                        </p>
+                    </div>
+                    <div class="article-credentials">
+                        Adeline, 31 février 2017
+                    </div>
+                </article>
             </div>
-        </article>
+        </div>
     </section>
 
-    <div class="credentials">
-        Wemucs team
-    </div>
+    <footer>
+        <div class="copyrights">
+            <div class="row">
+                <div class="large-12 columns">
+                    <p class="text text-footer text-copyrights">
+                        © 2015 Wemucs • All rights reserved
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="js/wemucs.js"></script>
 </body>

@@ -1,0 +1,18 @@
+// ------------------------------
+// - Media module
+// ------------------------------
+
+
+// - Core
+// ------------------------------
+.media {
+  .media-object {
+    float: left;
+    margin-right: 7px;
+  }
+
+  .media-body {
+    overflow: hidden;
+    zoom: 1;
+  }
+}

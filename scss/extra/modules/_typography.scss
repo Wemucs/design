@@ -1,0 +1,28 @@
+// ------------------------------
+// - Typography module
+// ------------------------------
+
+
+// - Core
+// ------------------------------
+.text,
+.title {
+    font-family: $base-font-family;
+}
+
+
+// - Variants
+// ------------------------------
+.text-footer {
+    color: $color-gray-text;
+
+    &.text-copyrights {
+        margin-bottom: 0;
+        padding: 25px 0 15px 0;
+        text-align: center;
+    }
+}
+
+.title-main {
+    color: $color-white;
+}
