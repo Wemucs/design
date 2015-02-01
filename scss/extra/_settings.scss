@@ -31,45 +31,16 @@ $row-width: 980px;
 
 // General
 // -------------------------
-$wemucs-content-background-color: #ffffff;
-$wemucs-title-color: #AD1730;
-$wemucs-text-color: #000    ;
-$wemucs-subtitle-color: #969696;
-$wemucs-light-color: #ccc;
-
 $header-bg-color: $color-red;
 $body-bg-color: $color-light;
 $subheader-bg-color: $color-gray;
 $footer-copyrights-bg-color: $color-dark-gray;
-
-
-// Foundation related settings
-$body-bg: $color-light;
-$body-font-color: $wemucs-text-color;
-
-$header-font-color: $wemucs-title-color;
-$small-font-color: $wemucs-subtitle-color;
 
 $footer-height: 65px;
 
 // Modules
 // -------------------------
 
-// Topbar
-$topbar-height: 45px;
-$topbar-margin-bottom: 0;
-
-$topbar-link-color: $wemucs-subtitle-color;
-$topbar-menu-link-color: $topbar-link-color;
-$topbar-menu-icon-color: $topbar-link-color;
-
-$topbar-dropdown-bg: $topbar-bg-color;
-$topbar-dropdown-link-color: $topbar-link-color;
-$topbar-dropdown-link-bg: $topbar-bg-color;
-
-// Background color for the top bar
-$topbar-bg-color: #ffffff;
-$topbar-bg: $topbar-bg-color;
-
-// Paths
-// -------------------------
+// Articles
+$article-border-color: lighten($color-light-gray, 20%);
+$article-text-color: lighten($color-gray, 20%);

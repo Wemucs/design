@@ -4,7 +4,7 @@
 
 .article {
   background-color: $color-white;
-  border: 1px solid #e9e9e9;
+  border: 1px solid $article-border-color;
   margin: 5px 0;
 
   + .article {
@@ -18,11 +18,11 @@
   }
 
   .article-title a {
-    color: #505050;
+    color: $article-text-color;
 
     &:hover,
     &:focus {
-      color: darken(#505050, 20%);
+      color: darken($article-text-color, 20%);
       text-decoration: none;
     }
   }
@@ -32,7 +32,12 @@
   }
 
   .article-content {
+    color: $article-text-color;
     font-size: 1rem;
+  }
+
+  .article-credentials {
+    color: $article-text-color;
   }
 }
 
