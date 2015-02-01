@@ -4,6 +4,7 @@
 
 .article-entry {
   border: 1px solid #e9e9e9;
+  margin: 5px 0;
   padding: 15px;
 
   + .article-entry {
@@ -14,6 +15,16 @@
 .article-entry {
   .article-title {
     font-size: 1.5rem;
+  }
+
+  .article-title a {
+    color: #505050;
+
+    &:hover,
+    &:focus {
+      color: darken(#505050, 20%);
+      text-decoration: none;
+    }
   }
 
   .article-content {
@@ -27,7 +38,6 @@
 @media #{$medium-up} {
   .article-entry {
     min-height: 340px;
-    margin: 5px 0;
 
     .article-title {
       min-height: 66px;
