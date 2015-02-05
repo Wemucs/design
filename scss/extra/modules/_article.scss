@@ -2,7 +2,7 @@
 // - Article module
 // ------------------------------
 
-.article {
+.article, .box {
   background-color: $color-white;
   border: 1px solid $article-border-color;
   margin: 5px 0;
@@ -13,6 +13,10 @@
 }
 
 .article {
+  .article-body {
+    padding: 10px;
+  }
+
   .article-title {
     font-size: 1.5rem;
   }
@@ -27,10 +31,6 @@
     }
   }
 
-  .article-body {
-    padding: 15px;
-  }
-
   .article-content {
     color: $article-text-color;
     font-size: 1rem;
@@ -41,19 +41,25 @@
   }
 }
 
+.content {
+
+}
+
 
 // - Responsive content
 // ------------------------------
 @media #{$medium-up} {
-  .article {
-    min-height: 340px;
+  .content {
+    .article {
+      min-height: 340px;
 
-    .article-title {
-      min-height: 66px;
-    }
+      .article-title {
+        min-height: 66px;
+      }
 
-    .article-content {
-      min-height: 50px;
+      .article-content {
+        min-height: 50px;
+      }
     }
   }
 }
