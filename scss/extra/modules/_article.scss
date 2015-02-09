@@ -37,12 +37,40 @@
   }
 
   .article-credentials {
+    @include grid-row();
+
     color: $article-text-color;
+    margin: 10px 0;
+
+    .article-credentials-avatar {
+      float: left;
+      height: 60px;
+      width: 60px;
+
+      margin: 0 10px;
+
+      .avatar {
+        border-radius: 50%;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+      }
+    }
+
+    .article-credentials-infos {
+      float: left;
+      width: 70%;
+    }
   }
 }
 
 .content {
+  p + ul {
+    margin-top: -0.5rem;
+  }
 
+  ul {
+    margin-left: 2em;
+  }
 }
 
 
