@@ -29,10 +29,19 @@ module.exports = function(grunt) {
 
     copy: {
       styles: {
-        expand: true,
-        cwd: '<%= wemucs.dirs.build %>/css',
-        src: '**',
-        dest: '<%= wemucs.dirs.examples %>/css'
+          files: [
+            {
+              expand: false,
+              src: '<%= wemucs.dirs.vendors %>/highlightjs/styles/railscasts.css',
+              dest: '<%= wemucs.dirs.build %>/css/highlight_railscasts.css'
+            },
+            {
+              expand: true,
+              cwd: '<%= wemucs.dirs.build %>/css',
+              src: '**',
+              dest: '<%= wemucs.dirs.examples %>/css'
+            }
+        ]
       },
       scripts: {
         expand: true,
@@ -52,7 +61,7 @@ module.exports = function(grunt) {
         },
         files: {
           '<%= wemucs.dirs.build %>/css/app.css': 'scss/app.scss'
-        }        
+        }
       }
     },
 
@@ -67,6 +76,7 @@ module.exports = function(grunt) {
             '<%= wemucs.dirs.vendors %>/jquery/dist/jquery.js',
             '<%= wemucs.dirs.vendors %>/foundation/js/foundation.js',
             '<%= wemucs.dirs.vendors %>/foundation/js/foundation/foundation.topbar.js',
+            '<%= wemucs.dirs.vendors %>/highlightjs/highlight.pack.js',
             '<%= wemucs.dirs.scripts %>/app.js',
           ]
         }

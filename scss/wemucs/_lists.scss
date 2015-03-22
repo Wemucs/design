@@ -1,3 +1,9 @@
+.articles-list {
+  article h1 {
+    font-size: 2.5em;
+  }
+}
+
 .articles-list, .related-articles {
   article {
     background-color: $wemucs-content-background-color;
@@ -9,8 +15,6 @@
     color: $wemucs-text-color;
 
     h1 {
-      font-size: 1.8em;
-
       a {
         color: $header-font-color;
       }

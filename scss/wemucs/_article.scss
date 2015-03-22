@@ -11,6 +11,10 @@
     font-size: 1.3em;
   }
 
+  h3, h4, h5, h6 {
+    margin-top: 30px;
+  }
+
   p + ul {
     margin-top: -0.5rem;
   }
@@ -68,6 +72,12 @@
     font-size: 1em;
     font-weight: 300;
     text-align: center;
+  }
+}
+
+.related-articles {
+  article h1 {
+    font-size: 1.8em;
   }
 }
 

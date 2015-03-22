@@ -8,6 +8,7 @@
 
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/highlight_railscasts.css" />
 </head>
 <body>
     <div class="contain-to-grid sticky">
@@ -36,6 +37,7 @@
                     <h2>20 millions rows in few seconds</h2>
                     <img class="article-img" src="http://lorempixel.com/300/100/"/>
                     <div class="content">
+                        <h3>The problem</h3>
                         <p>
                             Si vous avez besoin de remonter une base MySQL de plusieurs dizaines de Go, vous aurez sans doute été
                             confronté à des "petits" soucis de performances.
@@ -53,7 +55,15 @@
                             <li>600 Go</li>
                         </ul>
                         <p>
-                            <code>$this->isSuperCool();</code>
+                            <pre><code class="php">
+$this->isSuperCool();
+$object->getConnection()->setQuery("SELECT * FROM test");
+echo "test";
+                            </code></pre>
+                        </p>
+                        <h3>The solution</h3>
+                        <p>
+                            Just do it!
                         </p>
                     </div>
                     <div class="article-credentials">
@@ -94,7 +104,19 @@
         <div class="large-12 columns">
             <section class="related-articles">
                 <h1 class="section-title">Comments</h1>
+                <div id="disqus_thread"></div>
+                <script type="text/javascript">
+                    /* * * CONFIGURATION VARIABLES * * */
+                    var disqus_shortname = 'wemucs';
 
+                    /* * * DON'T EDIT BELOW THIS LINE * * */
+                    (function() {
+                        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                    })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
             </section>
         </div>
     </div>
@@ -105,5 +127,10 @@
     </section>
 
     <script src="js/wemucs.js"></script>
+    <script>
+        $('pre code').each(function(i, block) {
+            hljs.highlightBlock(block);
+        });
+    </script>
 </body>
 </html>
