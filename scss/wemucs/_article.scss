@@ -19,6 +19,10 @@
     margin-top: -0.5rem;
   }
 
+  li {
+    margin-left: 20px;
+  }
+  
   .article-img {
     margin-bottom: 1em;
   }
@@ -54,15 +58,6 @@
       font-weight: 300;
     }
   }
-
-//  .article-credentials {
-//    color: $wemucs-text-color;
-//
-//    margin-top: 3em;
-//
-//    font-size: 1em;
-//    text-align: center;
-//  }
 
   .article-topic {
     color: $wemucs-subtitle-color;
